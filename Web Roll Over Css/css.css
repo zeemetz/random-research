@@ -1,0 +1,12 @@
+.button
+{
+	background-image:url('buttonImages/red.png');
+	height:60;
+	width:60;
+	background-repeat:no-repeat;
+}
+
+.button:hover
+{
+	background-image:url('buttonImages/green.png');
+}

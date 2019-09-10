@@ -1,0 +1,115 @@
+*
+{
+	transition: all 1s ease;
+}
+
+@-webkit-keyframes slider
+{
+	10% {left:0;}
+	20% {left:0;}
+	30% {left:-300;}
+	40% {left:-300;}
+	50% {left:-600;}
+	60% {left:-600;}
+	70% {left:-300;}
+	80% {left:-300;}
+	90% {left:0;}
+	100% {left:0;}
+}
+
+@-webkit-keyframes animate
+{
+	6%   {background:url(Image/normalzombie2.png);}
+	12%   {background:url(Image/normalzombie3.png);}
+	18%   {background:url(Image/normalzombie4.png);}
+	24%   {background:url(Image/normalzombie5.png);}
+	30%   {background:url(Image/normalzombie6.png);}
+	36%   {background:url(Image/normalzombie7.png);}
+	42%   {background:url(Image/normalzombie8.png);}
+	48%   {background:url(Image/normalzombie9.png);}
+	54%   {background:url(Image/normalzombie10.png);}
+	60%   {background:url(Image/normalzombie11.png);}
+	66%   {background:url(Image/normalzombie12.png);}
+	72%   {background:url(Image/normalzombie13.png);}
+	78%   {background:url(Image/normalzombie14.png);}
+	84%   {background:url(Image/normalzombie15.png);}
+	90%   {background:url(Image/normalzombie16.png);}
+	96%   {background:url(Image/normalzombie17.png);}
+	100%   {background:url(Image/normalzombie18.png);}
+}
+
+.animation
+{
+	background:url(Image/normalzombie1.png);
+	background-repeat:no-repeat;
+	width:90;
+	height:120;
+	border:2 solid red;
+}
+
+.animation:hover
+{
+	-webkit-animation: animate 0.5s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.container:hover>.slider
+{
+	-webkit-animation: slider 30s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.container
+{
+	overflow:hidden;
+	position:absolute;
+	left:500;
+	margin-top:10;
+	width:300;
+	height:300;
+	border:blue 2 solid;
+}
+
+.slider
+{
+	position:absolute;
+	width:300%;
+	height:100%;
+}
+
+.frame
+{
+	float:left;
+	width:33.33%;
+	height:100%;
+}
+
+.container2:hover>.slider2
+{
+	left:-300;
+}
+
+.container2
+{
+	overflow:hidden;
+	position:absolute;
+	left:1000;
+	margin-top:10;
+	width:300;
+	height:300;
+	border:blue 2 solid;
+}
+
+.slider2
+{
+	position:absolute;
+	width:300%;
+	height:100%;
+}
+
+.frame2
+{
+	float:left;
+	width:33.33%;
+	height:100%;
+}
